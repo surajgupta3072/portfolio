@@ -12,9 +12,12 @@ padding: 20px;
 
   position: absolute;
   left: 25px;
+  top: 10px;
 }
 .navbar{
   position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .navbar{
   font-family: Montserrat;
@@ -23,6 +26,7 @@ nav{
   background: #0082e6;
   height: 80px;
   width: 100%;
+  margin-top: 0;
 }
 label.logo{
   color: white;
@@ -41,7 +45,7 @@ nav ul{
 
 nav ul li{
   display: inline-block;
-  line-height: 80px;
+  line-height: 50px;
   margin: 0 5px;
 }
 
@@ -116,7 +120,7 @@ a.active, a:hover{
 }
 .bottom-container{
   background-color: #ffc2b4;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   padding-top: 40px;
 }
 
@@ -132,10 +136,12 @@ a.active, a:hover{
 }
 
 .contact-me{
+  width: 100%;
+  margin: 0px auto 0px auto;
   background-color: #adeecf;
-  margin-top: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .achievements{
   background-color: #c0e218;
@@ -160,7 +166,7 @@ h1 {
   font-size:100px;
 }
 h2{font-family: 'Sacramento', cursive;
-font-size: 50px;
+font-size: 70px;
 padding-bottom: 10px;
 }
 h3{font-family:'Roboto Mono', monospace;
@@ -170,6 +176,13 @@ font-size: 40px;}
   width: 50%;
   margin: 100px auto 100px auto;
   line-height: 2;
+}
+
+.hellopara{
+  width: 50%;
+  margin: 0px auto 0px auto;
+  line-height: 2;
+  padding-bottom: 50px;
 }
 
 .rainbow1{
@@ -199,10 +212,8 @@ a{
 
 .achievements{
   width: 100%;
-  margin: 0px auto 0px auto;
-  line-height: 2;
-  padding-top: 100px;
-  padding-bottom: 100px;
+    padding-top: 80px;
+  padding-bottom: 110px;
 }
 
 .contactimg{
@@ -211,9 +222,52 @@ a{
   left: 85px;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column, .column1, .column2, .column3 {
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 
-.btn {
+}
+.row{
+  margin-right: 250px;
+}
+
+.column1{
+  position: relative;
+  top: -95px;
+}
+
+.column2{
+  position: relative;
+  top: 53px;
+
+}
+
+.column3{
+  position: relative;
+  top: 30px;
+}
+.images {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 2px;
+  width: 150px;
+
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.button {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -230,7 +284,10 @@ a{
   text-decoration: none;
 }
 
-.btn:hover {
+
+
+
+.button:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
